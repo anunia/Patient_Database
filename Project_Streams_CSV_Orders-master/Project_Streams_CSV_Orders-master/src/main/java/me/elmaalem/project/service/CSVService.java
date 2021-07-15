@@ -180,7 +180,7 @@ public class CSVService {
             JSONObject jo = new JSONObject();
             JSONArray gen = convert(rs);
 
-            jo.put("Patients",gen);
+            jo.put("Visits",gen);
 
             return jo.toString();
         } catch (Exception e) {
