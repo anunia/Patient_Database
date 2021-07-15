@@ -31,7 +31,7 @@ public class DemoApplication {
 				+"practitionerId integer primary key,"
 				+"specialization varchar(30))"
 				+"as select practitionerId , specialization from "
-				+"CSVREAD( 'C:/Users/Aneta/Desktop/Załącznik_zadanie_JB/csv/practitioners.csv', null, 'charset=UTF-8' )";
+				+"CSVREAD( 'Project_Streams_CSV_Orders-master/src/main/resources/csv/practitioners.csv', null, 'charset=UTF-8' )";
 			stmt.execute(query);
 
 			query ="create table patients("
@@ -42,7 +42,7 @@ public class DemoApplication {
 				+"createdAt  varchar(20) "
 				+")"
 				+"as select patientId, firstName, lastName, city, createdAt from "
-				+"CSVREAD( 'C:/Users/Aneta/Desktop/Załącznik_zadanie_JB/csv/patients.csv', null, 'charset=UTF-8' )";
+				+"CSVREAD( 'Project_Streams_CSV_Orders-master/src/main/resources/csv/patients.csv', null, 'charset=UTF-8' )";
 			stmt.execute(query);
 
 			query = "create table visits("
@@ -53,7 +53,7 @@ public class DemoApplication {
 				+"foreign key (patientId  ) references patients(patientId )"
 				+")"
 				+"as select visitId, practitionerId, patientId from "
-				+"CSVREAD( 'C:/Users/Aneta/Desktop/Załącznik_zadanie_JB/csv/visits.csv', null, 'charset=UTF-8' )";
+				+"CSVREAD( 'Project_Streams_CSV_Orders-master/src/main/resources/csv/visits.csv', null, 'charset=UTF-8' )";
 			stmt.execute(query);
 
 			query = "create table patient2practitioner("
@@ -63,7 +63,7 @@ public class DemoApplication {
 				+"foreign key (practitionerId ) references practitioners(practitionerId)"
 				+")"
 				+"as select patientId,practitionerId from "
-				+"CSVREAD( 'C:/Users/Aneta/Desktop/Załącznik_zadanie_JB/csv/patient2practitioner.csv', null, 'charset=UTF-8' )";
+				+"CSVREAD( 'Project_Streams_CSV_Orders-master/src/main/resources/csv/patient2practitioner.csv', null, 'charset=UTF-8' )";
 			stmt.execute(query);
 
 			stmt.close();
