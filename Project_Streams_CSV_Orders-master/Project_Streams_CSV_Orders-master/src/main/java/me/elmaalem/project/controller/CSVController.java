@@ -13,7 +13,7 @@ import me.elmaalem.project.service.CSVService;
 
 @CrossOrigin("http://localhost:8080")
 @Controller
-@RequestMapping("/api/csv")
+@RequestMapping("/api")
 public class CSVController {
 
     @Autowired
