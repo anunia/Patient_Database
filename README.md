@@ -23,7 +23,7 @@ When `All` is passed to `{cities}` then response conteins results for all cities
 
 
 ### Response
-String containg information in the form of json.
+String containing requested information in JSON form.
 
 ### Example 
 #### Request
