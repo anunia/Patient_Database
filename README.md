@@ -3,6 +3,17 @@
 ## Details
 API returns informations about visit at the medical specialists. 
 
+## Most important classes
+
+#### Controller
+https://github.com/anunia/Patient_Database/blob/main/Project_Streams_CSV_Orders-master/Project_Streams_CSV_Orders-master/src/main/java/me/elmaalem/project/controller/CSVController.java
+
+#### Service
+https://github.com/anunia/Patient_Database/blob/main/Project_Streams_CSV_Orders-master/Project_Streams_CSV_Orders-master/src/main/java/me/elmaalem/project/service/CSVService.java
+
+#### Main and database creation
+https://github.com/anunia/Patient_Database/blob/main/Project_Streams_CSV_Orders-master/Project_Streams_CSV_Orders-master/src/main/java/me/elmaalem/project/DemoApplication.java
+
 ## Endpoint
 
 ### Request
